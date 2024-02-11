@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambient Room Temperature</title>
+  
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+  <div>
+    <h1>Ambient Room Temperature</h1>
+    <p id="temperatureValue"></p>
+    <canvas id="temperatureChart" width="600" height="400"></canvas>
+  </div>
+
+  <script>
+    const temperatureData = {
+      timeIntervals: [ 1,2,5,7,9,23],
+      localTemperature: [25, 26, 27, 26, 25,34], 
+      phoneBatteryTemperature: [28, 29, 30, 29, 28,35], 
+    };
+
+    
+    const canvas = document.getElementById('temperatureChart');
+    const ctx = canvas.getContext('2d');
+
+
+    const temperatureChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: temperatureData.timeIntervals,
+        datasets: [
+          {
+            label: 'Local Temperature (°C)',
+            data: temperatureData.localTemperature,
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1,
+            fill: false,
+          },
+          {
+            label: 'Laptop Battery Temperature (°C)',
+            data: temperatureData.phoneBatteryTemperature,
+            borderColor: 'rgba(255, 99, 132, 1)',
+            borderWidth: 1,
+            fill: false,
+          },
+        ],
+      },
+      options: {
+        scales: {
+          x: {
+            type: 'linear',
+            position: 'bottom',
+            title: {
+              display: true,
+              text: 'Time Intervals',
+            },
+          },
+          y: {
+            title: {
+              display: true,
+              text: 'Temperature (°C)',
+            },
+          },
+        },
+      },
+    });
+  </script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
