@@ -1,7 +1,5 @@
 # Ambient Temperature Analyzer
 
-![Ambient Room Temperature](link-to-an-image)
-
 ## Overview
 
 The **Ambient Temperature Analyzer** is a web and mobile application developed by Accuweather. It provides users with real-time insights into their room's temperature based on local weather data and mobile phone battery temperature. The application utilizes the Accuweather API for fetching local temperature data and showcases the information through an intuitive graphical interface.
