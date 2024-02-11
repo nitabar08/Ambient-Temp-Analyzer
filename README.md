@@ -35,3 +35,13 @@ The **Ambient Temperature Analyzer** is a web and mobile application developed b
    # .env
    RAPID_API_KEY=your_rapid_api_key_here
 Run the application using 'npm start'.
+
+## Known Issues
+
+### Laptop Battery Temperature Data Retrieval Challenges
+
+There are difficulties in fetching laptop battery temperature directly from a web application. Efforts have been made to address this, but additional solutions are welcome.
+
+### Graphical Representation Issues with Plotting Laptop Temperature Data
+
+The graphical representation of laptop temperature data in the chart faces challenges. Contributions to improve the accuracy and effectiveness of plotting laptop temperature data are appreciated.
