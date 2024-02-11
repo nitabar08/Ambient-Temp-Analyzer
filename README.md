@@ -14,7 +14,7 @@ The **Ambient Temperature Analyzer** is a web and mobile application developed b
 
 - **Express Middleware**: The server utilizes Express middleware to handle routes and serve static files, simplifying the server-side code.
 
-- **Battery Temperature Challenges**: Due to limitations in fetching laptop battery temperature directly from a web application, the project currently uses a placeholder for laptop battery temperature data.
+- **Battery Temperature Challenges**: Due to limitations in fetching mobile battery temperature directly for a web application, the project currently uses a laptop battery temperature dummy data.
 
 - **Graphical Representation**: The graphical representation of local temperature and laptop battery temperature (or placeholder data) is implemented using Chart.js, but challenges exist in accurately plotting laptop temperature data.
 
