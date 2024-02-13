@@ -20,7 +20,7 @@ The **Ambient Temperature Analyzer** is a web and mobile application developed b
 
 ## Technologies Used
 
-- **Frontend**: HTML, CSS, JavaScript, React (for web) / React Native (for mobile), Chart.js
+- **Frontend**: HTML, CSS, JavaScript, React (for web), Chart.js
 - **Backend**: Node.js (Express)
 - **Dependencies**: Chart.js, Electron, Express, Systeminformation
 
